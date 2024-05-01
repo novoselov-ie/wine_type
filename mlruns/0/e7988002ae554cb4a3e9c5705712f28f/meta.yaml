@@ -1,0 +1,15 @@
+artifact_uri: file:///Q:/Alfa/mlruns/0/e7988002ae554cb4a3e9c5705712f28f/artifacts
+end_time: 1714389697712
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: e7988002ae554cb4a3e9c5705712f28f
+run_name: wine_classifier
+run_uuid: e7988002ae554cb4a3e9c5705712f28f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1714389685243
+status: 3
+tags: []
+user_id: Илья
