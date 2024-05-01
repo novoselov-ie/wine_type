@@ -27,7 +27,8 @@
 - `Data_wine.json`: Тестовые данные для выполнения предсказаний.
 
 ## Успешное выполнение программы
-![Output](https://github.com/novoselov-ie/Test_ResNet101/blob/main/img/Example.png)
+![Output](https://github.com/novoselov-ie/wine_type/blob/main/img/Example.png)
+
 
 ## Зависимости
 - Python 3.11
