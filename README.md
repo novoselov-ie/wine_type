@@ -3,6 +3,13 @@
 ## Описание
 Этот проект представляет собой небольшой проект машинного обучения, который использует данные о составе вина для определения его типа (красное или белое). Для этого используются такие признаки, как "volatile acidity", "citric acid", "residual sugar", "chlorides", "free sulfur dioxide", "total sulfur dioxide", "density", "pH", "sulphates", "alcohol" и "quality". Модель обучается на этих данных и сохраняет предсказанные типы вина в файл `predicted_data` в формате `json`.
 
+## Docker
+Вы также можете скачать образ Docker и запустить приложение в контейнере:
+```bash
+docker pull ienovoselov/wine-classifier:latest
+docker run -it ienovoselov/wine-classifier:latest
+```
+
 ## Установка
 1. Установите необходимые библиотеки с помощью команды:
     ```
