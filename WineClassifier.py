@@ -5,6 +5,7 @@ import json
 from art import tprint
 from tqdm import tqdm
 import mlflow
+import os
 
 tprint("Wine_Classifier")
 
@@ -14,8 +15,12 @@ def compare_cols(row):
     else:
         return 1
 
-logged_model = f"runs:/e7988002ae554cb4a3e9c5705712f28f/model"
-loaded_model = mlflow.pyfunc.load_model(logged_model)
+mlflow_artifacts_path = "./mlruns/0/e7988002ae554cb4a3e9c5705712f28f"
+model_path = "artifacts/model"
+absolute_model_path = os.path.join(mlflow_artifacts_path, model_path)
+
+# Загрузка модели из абсолютного пути
+loaded_model = mlflow.pyfunc.load_model(absolute_model_path)
 
 PATH_X_data = './Data_wine.json'
 X_test = pd.read_json(PATH_X_data, orient='split')
